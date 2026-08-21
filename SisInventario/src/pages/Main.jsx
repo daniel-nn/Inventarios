@@ -1,20 +1,29 @@
-import React from 'react'
-import javascriptLogo from '../assets/javascript.svg'
-import viteLogo from '../assets/vite.svg'
-import heroImg from '../assets/hero.png'
-import { setupCounter } from '../counter.js'
 import NavBar from '../componets/NavBar/Navbar.jsx';
+import SideBar from '../componets/SideBar/SideBar.jsx';
+
 
 function Main() {
   return (
-    <>
-      <div className="mx-auto">
-       
+    <div className="flex min-h-screen">
+
+
+      <aside className="w-1/5">
+        <SideBar />
+      </aside>
+
+      <div className="w-4/5">
+
+
+        <NavBar />
+
+
+        <main>
           
-          <NavBar />
-    
+        </main>
+
       </div>
-    </>
+
+    </div>
   )
 }
 
