@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "user": "User",
+    "email": "Email"
+  },
+  "sidebar": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "reports": "Reports",
+    "logout": "Logout"
+  },
+  "home": {
+    "welcome": "Welcome to Atreo",
+    "description": "Inventory management system for your company.",
+    "products": "Products",
+    "productsDesc": "Manage your product inventory",
+    "categories": "Categories",
+    "categoriesDesc": "Organize your products by categories",
+    "reports": "Reports",
+    "reportsDesc": "Analyze your inventory data",
+    "profile": "My Profile",
+    "profileDesc": "Manage your account and preferences",
+    "futureNote": "Note for future implementation",
+    "futureText": "The UserContext will be implemented here to personalize views according to the user's role (Administrator, Warehouse Manager, Manager, etc.)."
+  },
+  "login": {
+    "title": "Atreo",
+    "subtitle": "Inventory Management System",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "completeFields": "Please complete all fields",
+    "demoInfo": "Demo: Use any email and password to login. (Real authentication pending backend integration)",
+    "version": "v1.0 - Frontend in development"
+  }
+}

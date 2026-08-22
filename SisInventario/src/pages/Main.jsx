@@ -1,24 +1,21 @@
-import NavBar from '../componets/NavBar/Navbar.jsx';
-import SideBar from '../componets/SideBar/SideBar.jsx';
-
+import NavBar from '../components/Layout/NavBar.jsx';
+import SideBar from '../components/Layout/SideBar.jsx';
+import { Outlet } from 'react-router-dom';
 
 function Main() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-screen overflow-hidden">
 
-
-      <aside className="w-1/5">
+      <div className="w-1/5 h-full">
         <SideBar />
-      </aside>
+      </div>
 
-      <div className="w-4/5">
-
+      <div className="w-4/5 h-full flex flex-col">
 
         <NavBar />
 
-
-        <main>
-          
+        <main className="flex-1 overflow-y-auto">
+          <Outlet />
         </main>
 
       </div>

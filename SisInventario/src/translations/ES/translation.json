@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "user": "Usuario",
+    "email": "Correo"
+  },
+  "sidebar": {
+    "home": "Inicio",
+    "products": "Productos",
+    "categories": "Categorías",
+    "reports": "Reportes",
+    "logout": "Cerrar Sesión"
+  },
+  "home": {
+    "welcome": "Bienvenido a Atreo",
+    "description": "Sistema de gestión de inventario para tu empresa.",
+    "products": "Productos",
+    "productsDesc": "Gestiona tu inventario de productos",
+    "categories": "Categorías",
+    "categoriesDesc": "Organiza tus productos en categorías",
+    "reports": "Reportes",
+    "reportsDesc": "Analiza datos de tu inventario",
+    "profile": "Mi Perfil",
+    "profileDesc": "Gestiona tu cuenta y preferencias",
+    "futureNote": "Nota para implementación futura",
+    "futureText": "El UserContext se implementará aquí para personalizar las vistas según el rol del usuario (Administrador, Almacenero, Gestor, etc.)."
+  },
+  "login": {
+    "title": "Atreo",
+    "subtitle": "Sistema de Gestión de Inventario",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "signIn": "Iniciar Sesión",
+    "signingIn": "Ingresando...",
+    "completeFields": "Por favor completa todos los campos",
+    "demoInfo": "Demo: Usa cualquier correo y contraseña para ingresar. (Autenticación real pendiente de backend)",
+    "version": "v1.0 - Front en desarrollo"
+  }
+}
