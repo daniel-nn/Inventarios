@@ -1,10 +1,14 @@
 import movingBox from '../../assets/MovingBox.png'
 import { useUser } from '../../context/UserContext';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const NavBar = () => {
     const { user } = useUser();
     const { t, i18n } = useTranslation();
+    const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+    const userEmail = user?.email || t('navbar.guest');
 
     const handleLanguageChange = (language) => {
         i18n.changeLanguage(language);
@@ -18,7 +22,7 @@ const NavBar = () => {
                     <h1 className="text-lg font-semibold">Atreo</h1>
                 </div>
                 
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4">
                     {/* Language Selector */}
                     <div className="flex items-center gap-2">
                         <button
@@ -45,10 +49,12 @@ const NavBar = () => {
                         </button>
                     </div>
 
-                    {/* User Info */}
-                    <div className="flex items-center gap-2 border-l border-slate-700 pl-6">
-                        <span className="text-sm text-slate-300">{t('navbar.user')}:</span>
-                        <span className="text-sm font-medium">{user?.email || 'Guest'}</span>
+                    <div className="relative border-l border-slate-700 pl-4">
+                        <button type="button" onClick={() => setIsUserMenuOpen(!isUserMenuOpen)} className="flex items-center gap-2 rounded-full p-1 transition hover:bg-slate-800" aria-expanded={isUserMenuOpen} aria-label={t('navbar.openProfileMenu')}>
+                            <img src="/user-avatar.svg" alt={t('navbar.avatarAlt')} className="h-10 w-10 rounded-full" />
+                            <span className="hidden text-left sm:block"><span className="block text-sm font-semibold">{user?.name || t('navbar.defaultName')}</span><span className="block max-w-40 truncate text-xs text-slate-400">{userEmail}</span></span>
+                        </button>
+                        {isUserMenuOpen && <div className="absolute right-0 top-14 z-20 w-64 rounded-lg border border-slate-200 bg-white p-4 text-slate-900 shadow-xl"><p className="text-sm font-bold">{user?.name || t('navbar.defaultName')}</p><p className="mt-1 truncate text-sm text-slate-500">{userEmail}</p><div className="my-3 border-t border-slate-200" /><Link to="/perfil" onClick={() => setIsUserMenuOpen(false)} className="block rounded-md px-3 py-2 text-sm font-semibold hover:bg-slate-100">{t('navbar.profile')}</Link></div>}
                     </div>
                 </div>
             </div>

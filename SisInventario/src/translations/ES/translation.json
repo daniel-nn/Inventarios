@@ -1,13 +1,19 @@
 {
   "navbar": {
     "user": "Usuario",
-    "email": "Correo"
+    "email": "Correo",
+    "guest": "Invitado",
+    "defaultName": "Jhon Doe",
+    "profile": "Perfil",
+    "openProfileMenu": "Abrir menú de usuario",
+    "avatarAlt": "Imagen de usuario"
   },
   "sidebar": {
     "home": "Inicio",
     "products": "Productos",
     "categories": "Categorías",
     "reports": "Reportes",
+    "users": "Usuarios",
     "logout": "Cerrar Sesión"
   },
   "home": {
@@ -34,5 +40,43 @@
     "completeFields": "Por favor completa todos los campos",
     "demoInfo": "Demo: Usa cualquier correo y contraseña para ingresar. (Autenticación real pendiente de backend)",
     "version": "v1.0 - Front en desarrollo"
+  },
+  "profile": {
+    "eyebrow": "Cuenta",
+    "title": "Perfil de usuario",
+    "description": "Consulta la información asociada a tu cuenta.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "role": "Rol",
+    "id": "Identificador",
+    "pending": "Pendiente",
+    "permissionsNote": "Las opciones de edición y los permisos se definirán según el rol del usuario cuando se conecte el backend."
+  },
+  "users": {
+    "eyebrow": "Administración",
+    "title": "Usuarios",
+    "description": "Gestiona los usuarios y sus permisos dentro del sistema.",
+    "new": "Nuevo usuario",
+    "tableTitle": "Usuarios registrados",
+    "tableDescription": "Plantilla preparada para los datos del backend.",
+    "name": "Nombre",
+    "email": "Correo",
+    "role": "Rol",
+    "status": "Estado",
+    "actions": "Acciones",
+    "view": "Ver",
+    "active": "Activo"
+  },
+  "products": {
+    "eyebrow": "Inventario", "title": "Productos", "description": "Consulta y administra los productos disponibles en tu inventario.", "new": "Nuevo producto", "tableTitle": "Catálogo de productos", "registered": "productos registrados", "search": "Buscar producto...", "product": "Producto", "category": "Categoría", "stock": "Stock", "price": "Precio", "status": "Estado", "actions": "Acciones", "edit": "Editar", "statusValues": { "active": "Activo", "lowStock": "Bajo stock", "outOfStock": "Agotado" }
+  },
+  "categories": {
+    "eyebrow": "Organización", "title": "Categorías", "description": "Agrupa tus productos para encontrar y gestionar el inventario con claridad.", "new": "Nueva categoría", "tableTitle": "Categorías del inventario", "registered": "categorías registradas", "name": "Nombre", "descriptionColumn": "Descripción", "products": "Productos", "status": "Estado", "actions": "Acciones", "edit": "Editar", "statusValues": { "active": "Activa" }
+  },
+  "reports": {
+    "eyebrow": "Análisis", "selector": "Tipo de reporte", "filters": "Periodo y filtros del reporte", "export": "Exportar",
+    "types": { "sales": "Ventas", "stock": "Estado del stock", "purchases": "Compras", "movements": "Movimientos", "categories": "Rendimiento por categoría" },
+    "titles": { "sales": "Reporte de ventas", "stock": "Reporte de estado del stock", "purchases": "Reporte de compras", "movements": "Reporte de movimientos", "categories": "Reporte de rendimiento por categoría" },
+    "details": { "sales": "Resumen de ventas por periodo, producto y categoría.", "stock": "Existencias actuales, niveles mínimos y productos agotados.", "purchases": "Historial de compras y comportamiento de abastecimiento.", "movements": "Entradas, salidas y ajustes registrados en el inventario.", "categories": "Comparativa de actividad y valor por categoría." }
   }
 }

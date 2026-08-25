@@ -42,7 +42,7 @@ function Login() {
         setTimeout(() => {
             const dummyUser = {
                 id: 1,
-                name: 'Demo User',
+                name: 'Jhon Doe',
                 email: email,
                 role: 'Admin',
                 token: 'dummy_token_' + Date.now()

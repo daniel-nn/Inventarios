@@ -37,22 +37,28 @@ const SideBar = () => {
                         🏠 {t('sidebar.home')}
                     </Link>
                     <Link 
-                        to="/productos" 
-                        className="px-4 py-2 rounded-lg hover:bg-slate-300 transition-colors font-medium"
-                    >
-                        📦 {t('sidebar.products')}
-                    </Link>
-                    <Link 
-                        to="/categorias" 
+                        to="/categorias"
                         className="px-4 py-2 rounded-lg hover:bg-slate-300 transition-colors font-medium"
                     >
                         🏷️ {t('sidebar.categories')}
                     </Link>
                     <Link 
-                        to="/reportes" 
+                        to="/productos"
+                        className="px-4 py-2 rounded-lg hover:bg-slate-300 transition-colors font-medium"
+                    >
+                        📦 {t('sidebar.products')}
+                    </Link>
+                    <Link
+                        to="/reportes"
                         className="px-4 py-2 rounded-lg hover:bg-slate-300 transition-colors font-medium"
                     >
                         📊 {t('sidebar.reports')}
+                    </Link>
+                    <Link
+                        to="/usuarios"
+                        className="px-4 py-2 rounded-lg hover:bg-slate-300 transition-colors font-medium"
+                    >
+                        👥 {t('sidebar.users')}
                     </Link>
                 </nav>
             </div>

@@ -6,6 +6,8 @@ import Categorias from "../pages/categorias/Categorias";
 import Reportes from "../pages/reportes/Reportes";
 import Login from "../pages/login/Login";
 import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute";
+import Perfil from "../pages/perfil/Perfil";
+import Usuarios from "../pages/usuarios/Usuarios";
 
 
 export function AppRoutes() {
@@ -30,7 +32,8 @@ export function AppRoutes() {
           <Route path="productos" element={<Productos />} />
           <Route path="categorias" element={<Categorias />} />
           <Route path="reportes" element={<Reportes />} />
-          {/* <Route path="perfil" element={<Perfil />} /> */}
+          <Route path="perfil" element={<Perfil />} />
+          <Route path="usuarios" element={<Usuarios />} />
         </Route>
 
         {/* Ruta por defecto - redirige a login */}

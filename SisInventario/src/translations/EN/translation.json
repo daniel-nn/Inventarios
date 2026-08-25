@@ -1,13 +1,19 @@
 {
   "navbar": {
     "user": "User",
-    "email": "Email"
+    "email": "Email",
+    "guest": "Guest",
+    "defaultName": "Jhon Doe",
+    "profile": "Profile",
+    "openProfileMenu": "Open user menu",
+    "avatarAlt": "User avatar"
   },
   "sidebar": {
     "home": "Home",
     "products": "Products",
     "categories": "Categories",
     "reports": "Reports",
+    "users": "Users",
     "logout": "Logout"
   },
   "home": {
@@ -34,5 +40,43 @@
     "completeFields": "Please complete all fields",
     "demoInfo": "Demo: Use any email and password to login. (Real authentication pending backend integration)",
     "version": "v1.0 - Frontend in development"
+  },
+  "profile": {
+    "eyebrow": "Account",
+    "title": "User profile",
+    "description": "Review the information associated with your account.",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "id": "Identifier",
+    "pending": "Pending",
+    "permissionsNote": "Editing options and permissions will be defined by the user's role when the backend is connected."
+  },
+  "users": {
+    "eyebrow": "Administration",
+    "title": "Users",
+    "description": "Manage users and their permissions in the system.",
+    "new": "New user",
+    "tableTitle": "Registered users",
+    "tableDescription": "Template ready for backend data.",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "actions": "Actions",
+    "view": "View",
+    "active": "Active"
+  },
+  "products": {
+    "eyebrow": "Inventory", "title": "Products", "description": "Review and manage the products available in your inventory.", "new": "New product", "tableTitle": "Product catalog", "registered": "registered products", "search": "Search product...", "product": "Product", "category": "Category", "stock": "Stock", "price": "Price", "status": "Status", "actions": "Actions", "edit": "Edit", "statusValues": { "active": "Active", "lowStock": "Low stock", "outOfStock": "Out of stock" }
+  },
+  "categories": {
+    "eyebrow": "Organization", "title": "Categories", "description": "Group products to find and manage inventory clearly.", "new": "New category", "tableTitle": "Inventory categories", "registered": "registered categories", "name": "Name", "descriptionColumn": "Description", "products": "Products", "status": "Status", "actions": "Actions", "edit": "Edit", "statusValues": { "active": "Active" }
+  },
+  "reports": {
+    "eyebrow": "Analytics", "selector": "Report type", "filters": "Report period and filters", "export": "Export",
+    "types": { "sales": "Sales", "stock": "Stock status", "purchases": "Purchases", "movements": "Movements", "categories": "Performance by category" },
+    "titles": { "sales": "Sales report", "stock": "Stock status report", "purchases": "Purchases report", "movements": "Inventory movements report", "categories": "Performance by category report" },
+    "details": { "sales": "Sales summary by period, product, and category.", "stock": "Current quantities, minimum levels, and out-of-stock products.", "purchases": "Purchase history and replenishment behavior.", "movements": "Inventory entries, exits, and adjustments.", "categories": "Activity and value comparison by category." }
   }
 }

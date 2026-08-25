@@ -4,13 +4,13 @@ import { Outlet } from 'react-router-dom';
 
 function Main() {
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-screen flex-col overflow-hidden md:flex-row">
 
-      <div className="w-1/5 h-full">
+      <div className="h-auto w-full shrink-0 md:h-full md:w-64">
         <SideBar />
       </div>
 
-      <div className="w-4/5 h-full flex flex-col">
+      <div className="flex h-[calc(100vh-5rem)] min-w-0 w-full flex-col md:h-full md:flex-1">
 
         <NavBar />
 
